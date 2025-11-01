@@ -12,8 +12,20 @@ NC='\033[0m'
 echo -e "${BLUE}Starting all servers...${NC}"
 echo ""
 
-# Source bash profile to get bun in PATH
-source ~/.bash_profile
+# Ensure bun is in PATH
+if ! command -v bun &> /dev/null; then
+    # Try common locations
+    if [ -f ~/.bash_profile ]; then
+        source ~/.bash_profile
+    elif [ -f ~/.bashrc ]; then
+        source ~/.bashrc
+    elif [ -d ~/.bun/bin ]; then
+        export PATH="$HOME/.bun/bin:$PATH"
+    else
+        echo "Error: Bun not found in PATH. Please install Bun or add it to your PATH."
+        exit 1
+    fi
+fi
 
 # Start Bun Native Server (port 3000)
 echo -e "${GREEN}Starting Bun Native Server on port 3000...${NC}"
