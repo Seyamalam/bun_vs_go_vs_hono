@@ -7,6 +7,8 @@ dist/
 build/
 *.exe
 *.out
+go-native/server
+go-native/server-*
 
 # Environment files
 .env

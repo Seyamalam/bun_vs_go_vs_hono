@@ -265,6 +265,45 @@ See `database/schema.sql` for complete schema.
 
 Feel free to add more implementations or improve existing ones!
 
+## 📚 Documentation
+
+- **[Quick Start Guide](QUICKSTART.md)** - Get up and running in 5 minutes
+- **[Architecture Overview](ARCHITECTURE.md)** - System design and data flow
+- **[Benchmark Results](BENCHMARKS.md)** - Detailed performance analysis
+- **[Implementation Comparison](COMPARISON.md)** - Feature-by-feature comparison
+- **[Contributing Guide](CONTRIBUTING.md)** - How to contribute to this project
+
+## 🎯 Project Goals
+
+This project aims to provide:
+
+1. **Fair Comparison**: Identical functionality across all implementations
+2. **Real-World Scenarios**: API endpoints that mirror actual use cases
+3. **Educational Value**: Learn different approaches to the same problem
+4. **Practical Insights**: Understand trade-offs in technology choices
+5. **Reproducible Results**: Anyone can run the same benchmarks
+
+## 🚀 Use Cases
+
+This benchmark project is useful for:
+
+- **Technology Evaluation**: Choosing the right stack for your next project
+- **Learning**: Understanding different programming paradigms
+- **Performance Testing**: Establishing baseline metrics
+- **Team Training**: Teaching API design patterns
+- **Migration Planning**: Understanding performance implications
+
+## 🤝 Contributing
+
+Contributions are welcome! See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+
+Ideas for contributions:
+- Add more implementations (Rust, Python, Java, etc.)
+- Improve benchmarking methodology
+- Add more complex endpoints
+- Enhance documentation
+- Add automated tests
+
 ## 📄 License
 
 MIT
